@@ -1,0 +1,33 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("----Três números inteiros---");
+
+        // Solicita dois números inteiros ao usuário
+        Console.Write("\nDigite o primeiro número inteiro: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite o segundo número inteiro: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite o terceiro número inteiro: ");
+        int num3 = Convert.ToInt32(Console.ReadLine());
+
+        // Verifica se os números são iguais
+        if ((num1 < num2) && (num1 > num3))
+        {
+            Console.WriteLine("O primeiro número é menor que o segundo número e maior que o terceiro número");
+        }
+        else
+        {
+            Console.WriteLine("O primeiro número não é menor que o segundo número e maior que o terceiro número");
+
+        }
+
+        // Pausa o programa para que o usuário possa ver o resultado
+        Console.ReadKey();
+    }
+}
