@@ -1,38 +1,35 @@
 using System;
 
-namespace Atividade_02
+public class Program
 {
-	class Program
-	{
-		public static void Main(string[] args)
-		{
-			Console.WriteLine("------Mostra se o primeiro número é maior que o segundo número------");
-			
-			Console.Write("Digite o primeiro número: ");
-			int primeiroNum = Int32.Parse(Console.ReadLine());
-			
-			Console.Write("Digite o segundo número: ");
-			int segundoNum = Int32.Parse(Console.ReadLine());
-			
-			
-			Maior(primeiroNum, segundoNum);
-			Console.ReadKey();
-		}
-			
-		
-//Função para realizar o cálculo e mostrar o resto da divisão
-		public static int Maior (int primeiroNum, int segundoNum)
-		{
-			if (primeiroNum > segundoNum)
-			{
-				Console.Write("\nO primeiro número é maior que o segundo");
-				
-			} else {
-				Console.Write("\nO primeiro número não é maior que o segundo");
-				
-			}
-			
-			return primeiroNum;
-		}
-	}
+    public static void Main()
+    {
+        Console.WriteLine("-----Maior ou Menor-----");
+
+        Console.WriteLine("\nDigite o primeiro número: ");
+        int numero1 = Int32.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite o segundo número: ");
+        int numero2 = Int32.Parse(Console.ReadLine());
+        
+     //Retorna a função
+        MaiorOuMenor(numero1, numero2);
+
+        Console.ReadKey();
+    }
+
+//Função que define se o primeiro número é maior ou não que o segundo número
+    private static int MaiorOuMenor(int numero1, int numero2)
+    {
+        if (numero1 > numero2) {
+            Console.WriteLine("O número " + numero1 + " é maior que " + numero2);
+
+        } else {
+            Console.WriteLine("O número " + numero1 + " não é maior que " + numero2);
+
+        }
+
+        return numero1;
+    }
+
 }
