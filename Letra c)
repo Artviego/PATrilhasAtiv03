@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Solicita dois números inteiros ao usuário
+        Console.Write("Digite o primeiro número: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite o segundo número: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        // Verifica se os números são iguais
+        if (num1 == num2)
+        {
+            Console.WriteLine("Os números são iguais.");
+        }
+        else
+        {
+            Console.WriteLine("Os números são diferentes.");
+        }
+
+        // Pausa o programa para que o usuário possa ver o resultado
+        Console.ReadKey();
+    }
+}
