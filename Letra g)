@@ -1,0 +1,30 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("-----Maior ou Menor ponto flutuante----");
+
+        // Solicita dois números inteiros ao usuário
+        Console.Write("\nDigite o primeiro número de ponto flutuante: ");
+        float numero1 = float.Parse(Console.ReadLine());
+
+        Console.Write("Digite o segundo número de ponto flutuante: ");
+        float numero2 = float.Parse(Console.ReadLine());
+
+
+        if ((numero1 < numero2) || (numero1 == numero2))
+        {
+            Console.WriteLine("\nO primeiro número é menor ou igual ao segundo número");
+
+        }
+        else
+        {
+            Console.WriteLine("\nO primeiro número não é menor ou igual ao segundo número");
+
+        }
+
+        Console.ReadKey();
+    }
+}
