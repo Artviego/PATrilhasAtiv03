@@ -1,0 +1,35 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.WriteLine("-----Maior ou Menor-----");
+
+        Console.WriteLine("\nDigite o primeiro número: ");
+        int numero1 = Int32.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite o segundo número: ");
+        int numero2 = Int32.Parse(Console.ReadLine());
+        
+     //Retorna a função
+        MaiorOuMenor(numero1, numero2);
+
+        Console.ReadKey();
+    }
+
+//Função que define se o primeiro número é maior ou não que o segundo número
+    private static int MaiorOuMenor(int numero1, int numero2)
+    {
+        if (numero1 < numero2) {
+            Console.WriteLine("O número " + numero1 + " é menor que " + numero2);
+
+        } else {
+            Console.WriteLine("O número " + numero1 + " não é menor que " + numero2);
+
+        }
+
+        return numero1;
+    }
+
+}
