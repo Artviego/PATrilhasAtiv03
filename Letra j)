@@ -1,0 +1,28 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("------Número de ponto flutuante igual ou diferente de 0------");
+
+        // Solicita um número de ponto flutuante ao usuário
+        Console.Write("Digite um número de ponto flutuante: ");
+        float numero = float.Parse(Console.ReadLine());
+
+        // Verifica se o número igual a zero
+        if (numero == 0)
+        {
+            Console.WriteLine("\n"+ numero + " é igual a 0");
+
+        }
+        else
+        {
+            Console.WriteLine("\n"+ numero + " não é igual a 0");
+
+        }
+
+        // Pausa o programa para que o usuário possa ver o resultado
+        Console.ReadKey();
+    }
+}
