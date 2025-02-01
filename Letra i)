@@ -1,0 +1,32 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("-----Diferença menor ou igual a 10-----");
+
+        // Solicita dois números inteiros ao usuário
+        Console.Write("\nDigite o primeiro número: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Digite o segundo número: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        // Calcula a diferença entre os números
+        int diferenca = Math.Abs(num1 - num2);
+
+        // Verifica se a diferença é menor ou igual a 10
+        if (diferenca <= 10)
+        {
+            Console.WriteLine("\nA diferença entre os números é menor ou igual a 10.");
+        }
+        else
+        {
+            Console.WriteLine("\nA diferença entre os números é maior que 10.");
+        }
+
+        // Pausa o programa para que o usuário possa ver o resultado
+        Console.ReadKey();
+    }
+}
