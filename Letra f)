@@ -1,0 +1,28 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("------Ímpar ou Par------");
+
+        // Solicita um número inteiro ao usuário
+        Console.Write("Digite um número inteiro: ");
+        int numero = Convert.ToInt32(Console.ReadLine());
+
+        // Verifica se o número é par ou ímpar
+        if (numero % 2 == 0)
+        {
+            Console.WriteLine(numero + " é par.");
+
+        }
+        else
+        {
+            Console.WriteLine(numero + " é ímpar.");
+
+        }
+
+        // Pausa o programa para que o usuário possa ver o resultado
+        Console.ReadKey();
+    }
+}
