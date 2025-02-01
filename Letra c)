@@ -19,6 +19,7 @@ class Program
         else
         {
             Console.WriteLine("Os números são diferentes.");
+
         }
 
         // Pausa o programa para que o usuário possa ver o resultado
